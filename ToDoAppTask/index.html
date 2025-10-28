@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TODOLIST</h1>
+
+      <div class="input-container">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="what needs to be done?"
+        />
+        <button id="add-btn" aria-label="Add task">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <div class="progress-container">
+        <div class="progress-wrapper">
+          <div class="progress-bar">
+            <div id="progress-fill"></div>
+          </div>
+          <span id="progress-text"></span>
+        </div>
+        <button id="clear-btn">
+          Remove checked &nbsp; <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
